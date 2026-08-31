@@ -1,0 +1,9 @@
+
+target/
+dbt_packages/
+logs/
+.env
+# Ignore local databases and environments
+*.duckdb
+*.duckdb.wal
+.venv/
