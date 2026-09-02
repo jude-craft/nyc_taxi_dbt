@@ -7,3 +7,5 @@ logs/
 *.duckdb
 *.duckdb.wal
 .venv/
+# Data directory
+data/
