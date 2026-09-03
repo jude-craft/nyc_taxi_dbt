@@ -4,6 +4,10 @@ with source as (
 
 renamed as (
     select
+
+        -- dbt-utils surrogate key macro
+        {{ dbt_utils.generate_surrogate_key(['vendorid', 'lpep_pickup_datetime']) }} as tripid,
+        
         -- identifiers
         cast(vendorid as integer) as vendor_id,
         {{ safe_cast('ratecodeid', 'integer') }} as rate_code_id,
