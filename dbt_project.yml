@@ -23,3 +23,9 @@ models:
       +materialized: view
     core:
       +materialized: table
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table
+flags:
+  require_generic_test_arguments_property: true
