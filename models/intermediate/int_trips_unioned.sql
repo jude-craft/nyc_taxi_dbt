@@ -51,3 +51,4 @@ yellow_trips as (
 select * from green_trips
 union all
 select * from yellow_trips
+limit 100000
