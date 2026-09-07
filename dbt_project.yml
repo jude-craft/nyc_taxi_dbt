@@ -21,8 +21,6 @@ models:
   nyc_taxi_dbt:
     staging:
       +materialized: view
-    core:
-      +materialized: table
     intermediate:
       +materialized: view
     marts:
